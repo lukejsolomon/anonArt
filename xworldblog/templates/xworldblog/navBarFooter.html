@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<!-- **********NAVBAR**************************** -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'xworldblog/xworld.css' %}">
+
+    <script data-ad-client="ca-pub-1254007956873968" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <title>anonarticle.com</title>
+
+</head>
+<!-- <img class="adCenter" src="{% static 'xworldblog\an9.png' %}"> -->
+
+<body>
+    <nav class=" navbar navbar-expand-sm bg-dark navbar-dark justify-content-between">
+        <a class="navbar-brand" href="{% url 'all_blogs' %}">anonarticle.com</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="adCenter" src="{% static 'xworldblog\an9.png' %}" alt="logo" style="width:250px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Culture' %}">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Entertainment' %}">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Technology' %}">Technology</a>
+                </li>
+
+        </div>
+    </nav>
+    <!-- **********END NAVBAR**************************** -->
+    {% block content %}{% endblock %}
+    <!-- **********FOOTER**************************** -->
+
+    <div class="footer">
+        <div class="row">
+
+
+            <p class="footTextLeft">We are a media startup founded with the goal of
+                engaging our readers with incredibly sharable content. We are on a mission to discover the most
+                extraordinary and inspiring stories from around the world, and share them with our audience.
+
+            </p>
+
+
+
+
+
+            <p class="footTextRight"> “My momma always said life is like a box of chocolates.
+                You never know what you're gonna get.”<br>
+                – Forrest Gump from Forrest Gump (1994) played by Tom Hanks.<br><br>
+                “Get busy livin', or get busy dyin'.” <br>
+                - Andy Dufresne from The Shawshank Redemption (1994) played by Tim Robbins.<br>
+            </p>
+
+            <p class="footTextLeft">
+                <a href="{% url 'all_blogs' %}">ABOUT| </a>
+                <a href="{% url 'all_blogs' %}">PRIVACY| </a>
+                <a href="{% url 'all_blogs' %}">DMCA| </a>
+                <a href="{% url 'all_blogs' %}">ADVERTISING</a>
+            </p>
+        </div>
+    </div>
+    <!-- **********END FOOTER**************************** -->
+</body>
+
+</html>

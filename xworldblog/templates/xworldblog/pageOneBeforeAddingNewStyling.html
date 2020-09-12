@@ -1,0 +1,52 @@
+{% extends 'xworldblog/navBarFooter.html' %}
+{% block content %}
+<div class="adLeft">
+    <script type="text/javascript"
+        src="https://uprimp.com/bnr.php?section=General&pub=979737&format=728x90&ga=g"></script>
+    <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                src="//ylx-aff.advertica-cdn.com/pub/728x90.png"
+                style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                alt="ylliX - Online Advertising Network" /></a></noscript>
+</div>
+
+
+<h1 class="blogText mt-3">{{ blog.title }}</h1>
+<h5 class="blogText mt-3">By: {{ blog.by }} | {{ blog.category }}
+</h5>
+<div class="adRight">
+    <script type="text/javascript"
+        src="https://uprimp.com/bnr.php?section=General&pub=979737&format=728x90&ga=g"></script>
+    <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                src="//ylx-aff.advertica-cdn.com/pub/728x90.png"
+                style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                alt="ylliX - Online Advertising Network" /></a></noscript>
+</div>
+<br>
+<div class="col-lg-12 col-md-8">
+    <img class="imgBlog" src="{{ blog.pageOneImage.url }}">
+    <!-- **************change******************* -->
+    <h2 class="blogText">{{ blog.pageOneTitle | safe }}</h2>
+    <p class="blogText">{{ blog.pageOne | safe }}</p>
+    <!-- **************change******************* -->
+    <br>
+</div>
+<div class="adLeft">
+    <script type="text/javascript"
+        src="https://uprimp.com/bnr.php?section=General&pub=979737&format=728x90&ga=g"></script>
+    <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                src="//ylx-aff.advertica-cdn.com/pub/728x90.png"
+                style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                alt="ylliX - Online Advertising Network" /></a></noscript>
+</div>
+<a href="{% url 'pageTwo' blog.id %}">
+    <p class="nextButton">Next</p>
+</a>
+<div class="adRight">
+    <script type="text/javascript"
+        src="https://uprimp.com/bnr.php?section=General&pub=979737&format=728x90&ga=g"></script>
+    <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                src="//ylx-aff.advertica-cdn.com/pub/728x90.png"
+                style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                alt="ylliX - Online Advertising Network" /></a></noscript>
+</div>
+{% endblock %}

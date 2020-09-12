@@ -1,0 +1,144 @@
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.nav-item {
+    font-size: 15px;
+    font-family: 'Russo One', sans-serif;
+}/* working */
+
+
+
+        .nextButton {
+            margin-left: 10%;
+            box-sizing: content-box;
+            width: 300px;
+            height: 80x;
+            background-color: gray;
+            padding: 10px;
+            box-shadow: 20px 20px 18px rgb(77, 44, 44);
+            text-align: center; 
+            font-family: 'Russo One', sans-serif; 
+            color: black;
+            font-size: 40px;
+        }
+        .adCenter {
+
+            margin-left: 20%;
+
+        }
+        .adLeft {
+
+            margin-left: 0%;
+
+        }
+        .adRight {
+
+            margin-left: 40%;
+
+        }
+        .blogText {
+            text-shadow: 20px 20px 18px rgb(77, 44, 44);
+        }
+        .blogTitleText {
+            text-align: center;
+            color: black;
+            text-shadow: 20px 20px 18px rgb(77, 44, 44);
+            font-family: 'Russo One', sans-serif; 
+        }
+        .imgBlog {
+            height: 200px;
+            width: 430px;
+            float: right;
+            box-sizing: content-box;
+            box-shadow: 20px 20px 18px rgb(77, 44, 44);
+        }
+        .allImgBlog {
+            height: 190px;
+            width: 350px;
+            float: right;
+            box-sizing: content-box;
+            box-shadow: 20px 20px 18px rgb(77, 44, 44);
+        }
+        .footer {
+            position: relative;
+            width: 100%;
+            background-color: #748085;
+            background-color: #000105;
+background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        }
+
+        .footTextLeft {
+            /* background-color: lightgrey; */
+            border-right: 10px solid white;
+            /* border: 15px solid green; */
+            width: 650px;
+            padding: 20px;
+            margin: 10px;
+            color: white;
+            text-align: right;
+            font-family: 'Russo One', sans-serif;
+            font-size: 20px;
+        }
+        .footTextRight {
+            /* background-color: lightgrey; */
+            border-left: 10px solid white;
+            width: 650px;
+            padding: 20px;
+            margin: 10px;
+            color: white;
+            text-align: left;
+            font-family: 'Russo One', sans-serif;
+            font-size: 20px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+          }
+          
+          .row {
+            display: flex;
+          }
+          
+          /* Create two equal columns that sits next to each other */
+          .column {
+            flex: 50%;
+            padding: 5px;
+             
+          }
+
+          .footer_ad {
+
+            margin: 10px auto 10px auto;
+            display: flex;
+          }
+          
+          .center-ad {
+            margin: auto;
+          }
+
+
+/* not working */
+
+        /* p.small {
+            line-height: 0.1;
+        } */
+
+
+
+        /* .catTitle {
+            padding: 100;
+
+        } */

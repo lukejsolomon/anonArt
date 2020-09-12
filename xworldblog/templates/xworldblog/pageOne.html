@@ -1,0 +1,68 @@
+{% extends 'xworldblog/navBarFooter.html' %}
+{% block content %}
+<br>
+<div class="row">
+    <div class="col-sm-4">
+        <script type="text/javascript"
+            src="https://uprimp.com/bnr.php?section=General&pub=979737&format=468x60&ga=g"></script>
+        <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                    src="//ylx-aff.advertica-cdn.com/pub/468x60.png"
+                    style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                    alt="ylliX - Online Advertising Network" /></a></noscript>
+    </div>
+    <div style="margin-left: 5%;" class="col-sm-4">
+        <script type="text/javascript"
+            src="https://uprimp.com/bnr.php?section=General&pub=979737&format=468x60&ga=g"></script>
+        <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                    src="//ylx-aff.advertica-cdn.com/pub/468x60.png"
+                    style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                    alt="ylliX - Online Advertising Network" /></a></noscript>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
+                src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_br_asin_til&ad_type=product_link&tracking_id=xworld0e-20&marketplace=amazon&region=US&placement=B00AMI9M9U&asins=B00AMI9M9U&linkId=3f67eb4382efa40415b4b15faa0673b9&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066C0&bg_color=FFFFFF">
+            </iframe>
+        </div>
+        <div class="col-sm-4">
+            <!-- **************************** -->
+            <img class="imgBlog" src="{{ blog.pageOneImage.url }}">
+        </div>
+        <div class="col-sm-4">
+            <script type="text/javascript"
+                src="https://uprimp.com/bnr.php?section=General&pub=979737&format=300x250&ga=g"></script>
+            <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                        src="//ylx-aff.advertica-cdn.com/pub/300x250.png"
+                        style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                        alt="ylliX - Online Advertising Network" /></a></noscript>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <!-- **************************** -->
+        <h2 class="blogText">{{ blog.pageOneTitle | safe }}</h2>
+        <p class="blogText">{{ blog.pageOne | safe }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <script type="text/javascript"
+            src="https://uprimp.com/bnr.php?section=General&pub=979737&format=468x60&ga=g"></script>
+        <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                    src="//ylx-aff.advertica-cdn.com/pub/468x60.png"
+                    style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                    alt="ylliX - Online Advertising Network" /></a></noscript>
+    </div>
+    <div style="margin-left: 5%;" class="col-sm-4">
+        <!-- **************************** -->
+        <a href="{% url 'pageTwo' blog.id %}">
+            <button class="nextButton">Next</button>
+        </a>
+    </div>
+</div>
+
+<br>
+{% endblock %}

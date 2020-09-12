@@ -1,0 +1,64 @@
+{% extends 'xworldblog/navBarFooter.html' %}
+{% block content %}
+<br>
+<br>
+<div class="row">
+    <div class="col-sm-4">
+        <script type="text/javascript"
+            src="https://uprimp.com/bnr.php?section=General&pub=979737&format=468x60&ga=g"></script>
+        <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                    src="//ylx-aff.advertica-cdn.com/pub/468x60.png"
+                    style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                    alt="ylliX - Online Advertising Network" /></a></noscript>
+    </div>
+    <div style="margin-left: 5%;" class="col-sm-4">
+        <script type="text/javascript"
+            src="https://uprimp.com/bnr.php?section=General&pub=979737&format=468x60&ga=g"></script>
+        <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                    src="//ylx-aff.advertica-cdn.com/pub/468x60.png"
+                    style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                    alt="ylliX - Online Advertising Network" /></a></noscript>
+    </div>
+</div>
+<div class="row">
+    {% for blog in blogs %}
+    <div class="col-lg-4 col-md-6">
+        <a href="{% url 'pageOne' blog.id %}">
+            <img class="imgBlog" src="{{ blog.summaryImage.url }}" height=190 width=350>
+
+
+            <h2 class="blogTitleText">{{ blog.title }}</h2>
+        </a>
+        <p class="blogText">By: {{ blog.by }} | {{ blog.date|date:'M d Y'|upper }} | {{ blog.category }}</p>
+        <p class="blogText">{{ blog.summary }}</p>
+
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <div style="  display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;">
+            <script type="text/javascript"
+                src="https://uprimp.com/bnr.php?section=General&pub=979737&format=300x250&ga=g"></script>
+            <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                        src="//ylx-aff.advertica-cdn.com/pub/300x250.png"
+                        style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                        alt="ylliX - Online Advertising Network" /></a></noscript>
+        </div>
+        <div style="  display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;">
+            <script type="text/javascript"
+                src="https://uprimp.com/bnr.php?section=General&pub=979737&format=300x250&ga=g"></script>
+            <noscript><a href="https://yllix.com/publishers/979737" target="_blank"><img
+                        src="//ylx-aff.advertica-cdn.com/pub/300x250.png"
+                        style="border:none;margin:0;padding:0;vertical-align:baseline;"
+                        alt="ylliX - Online Advertising Network" /></a></noscript>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
